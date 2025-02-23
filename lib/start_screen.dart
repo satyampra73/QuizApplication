@@ -9,9 +9,12 @@ class StartScreen extends StatelessWidget {
     return Center(child: Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(
-          'assets/images/quiz-logo.png',
-          width: 300,
+        Opacity(
+          opacity: 0.6 ,
+          child: Image.asset(
+            'assets/images/quiz-logo.png',
+            width: 300,
+          ),
         ),
 
         SizedBox(height: 20),
